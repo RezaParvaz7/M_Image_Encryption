@@ -14,7 +14,7 @@ end
     B1(:,j)=bitxor(A1(:,j),A1(:,floor(m/2)+j));
 end   
  for j=1:floor(n/4)
-    A2(j,:)=bitxor(A1(j,:),A1(floor(n/4)+j,:));
+    A2(j,:)=bitxor(B1(j,:),B1(floor(n/4)+j,:));
 end
  for j=1:floor(m/4)
     B2(:,j)=bitxor(A2(:,j),A2(:,floor(m/4)+j));
